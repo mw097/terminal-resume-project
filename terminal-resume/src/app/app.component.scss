@@ -4,11 +4,19 @@
     height: 100vh;
 
     .bezel {
-        // Add bezel.
+        position: relative;
+        // Set 100% - 2 x width of bazel.
+        width: calc(100% - 100px);
+        height: calc(100% - 100px);
+        border: 50px solid transparent;
+        border-image-source: $crt-bezel;
+        border-image-slice: 12% 11% fill;
+        overflow: hidden;
     }
 
     .crt {
         animation: textShadow 1.6s infinite;
+        height: 100%;
     }
 
     // Scanlines patterns.
@@ -28,7 +36,7 @@
         background-size: 100% 8px;
         z-index: 2;
         pointer-events: none;
-        animation: scanlines 1s steps(60) infinite;
+        animation: scanlines 1s steps(30) infinite;
     }
 
     // Flicker.
@@ -48,7 +56,7 @@
       }
 
    .terminal {
-    height: 100vh;
+    height: 100%;
     background-color: $terminal-theme-color;
    }
 }

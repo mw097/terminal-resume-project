@@ -11,6 +11,18 @@ export enum TerminalCharacters {
     Back = '\b',
 };
 
+/** Enum containing event keys used in terminal. */
+export enum TerminalEventKeys {
+    ArrowDown = 'ArrowDown',
+    ArrowUp = 'ArrowUp',
+    ArrowLeft = 'ArrowLeft',
+    ArrowRight = 'ArrowRight',
+    Backspace = 'Backspace',
+    Enter = 'Enter',
+    Escape = 'Escape',
+    Space = ' ',
+}
+
 export const GITHUB_USER_LOGO = ` 
      ██████╗ ███╗   ███╗██╗    ██╗ ██████╗  █████╗ ███████╗
     ██╔═══██╗████╗ ████║██║    ██║██╔═████╗██╔══██╗╚════██║
@@ -20,4 +32,5 @@ export const GITHUB_USER_LOGO = `
     ╚╝╚═══╝ ╚═╝     ╚═╝ ╚══╝╚══╝  ╚═════╝  ╚════╝    ╚═╝  `;
 
 export const TERMINAL_DESCRIPTION = `
-    \x1b[1;34m@mw097's\x1B[0m resume website`;
+    \x1b[1m\x1b[1;34m@mw097's\x1B[0m\x1b[0m retro-terminal resume. Check out my GitHub \x1b]8;;https://github.com/mw097\x07profile\x1b]8;;\x07
+    Type \x1b[1mhelp\x1b[0m to get list of commands.`;
