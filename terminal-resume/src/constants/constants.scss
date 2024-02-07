@@ -1,10 +1,12 @@
 // The file with app wide constants.
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
 
 // Colors.
 $flicker-background: #1210101a;
 $scanlines-line: #12101000;
 $scanlines-background: #00000040;
-$terminal-theme-color: #096136;
+$terminal-theme-color: #095d33;
 
 // Animations.
 @keyframes flicker {
